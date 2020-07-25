@@ -1,8 +1,124 @@
 body {
-  background: black;
+  margin: 0;
+  padding: 0;
 }
 
-.box {
-  background: white;
+.allboxes {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-animation-name: boxes;
+  animation-name: boxes;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+.allboxes:hover {
+  border: 0.15em solid #f5f5f5;
+  -webkit-transition: border 0.75s;
+  transition: border 0.75s;
+}
+
+.boxtop_left {
+  background-color: lightcoral;
+  top: 0;
+  left: 0;
+  -webkit-animation: boxtop_left 4s forwards;
+          animation: boxtop_left 4s forwards;
+}
+
+.boxtop_right {
+  background-color: lightblue;
+  top: 0;
+  right: 0;
+  -webkit-animation: boxtop_right 4s forwards;
+          animation: boxtop_right 4s forwards;
+}
+
+.boxbottom_right {
+  background-color: lightgreen;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: boxbottom_right 4s forwards;
+          animation: boxbottom_right 4s forwards;
+}
+
+.boxbottom_left {
+  background-color: lightgoldenrodyellow;
+  left: 0;
+  -webkit-animation: boxbottom_left 4s forwards;
+          animation: boxbottom_left 4s forwards;
+}
+
+@-webkit-keyframes boxtop_left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+    background-color: black;
+  }
+}
+
+@keyframes boxtop_left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes boxtop_right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100%;
+    background-color: black;
+  }
+}
+
+@keyframes boxtop_right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100%;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes boxbottom_right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100% 0 0 0;
+    background-color: black;
+  }
+}
+
+@keyframes boxbottom_right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100% 0 0 0;
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes boxbottom_left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100% 0 0;
+    background-color: black;
+  }
+}
+
+@keyframes boxbottom_left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100% 0 0;
+    background-color: black;
+  }
 }
 /*# sourceMappingURL=anistyles.css.map */
